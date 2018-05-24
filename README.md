@@ -25,16 +25,24 @@ pen colour 10-12 are a few emojis
 
     $a.p: 10
 set pen colour
+
     $a.pc: 15, "F"
 set a character for a pen colour
+
     $a.d
 draw picture
+
     $a.w
 write history of commands, can be used with `parse`
+
     $a.goto: 0,0,1
 teleport to x,y,p p=1 pen down p=0 pen up
+
     $a.u
 toggle pen up/down
+
+    $a.shake
+reset picture
 
 AUTHOR
 ======
