@@ -1,0 +1,25 @@
+{
+  "auth" : "github:ktown007",
+  "authors" : [
+    "Ken Town"
+  ],
+  "build-depends" : [ ],
+  "depends" : [
+  ],
+  "description" : "Etch a Sketch ascii art for the Terminal",
+  "license" : "Artistic-2.0",
+  "name" : "Terminal::asciisketch",
+  "perl" : "6.c",
+  "provides" : {
+    "Terminal::asciisketch" : "lib/Terminal/asciisketch.pm6"
+  },
+  "resources" : [ ],
+  "source-url" : "https://github.com/ktown007/perl6-terminal-asciisketch.git",
+  "tags" : [
+    "Terminal",
+    "CLI",
+    "ASCII-Art"
+  ],
+  "test-depends" : [ ],
+  "version" : "0.0.1"
+}
