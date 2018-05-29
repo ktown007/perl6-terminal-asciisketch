@@ -63,6 +63,7 @@ method d { # draw the picture
     #print "\033c" ;
     my $picture ;
     for ^self.height -> $y {
+        # slice array to width;
         $picture ~= @!data[$y].join("") ~ "\n" ;
     }
     @.hist.push: 'd' ;
@@ -108,7 +109,8 @@ method parse($commands){ # parse a string of commands hmmm this could be a gramm
     for $commands.split(" ") -> $c {
         if $c ~~ / \, / {
             my @go = $c.split(/ \, / ) ;
-            self.goto: @go[0].Int , @go[1].Int , @go[2].Int ;
+            #self.goto: @go[0].Int , @go[1].Int , @go[2].Int ;
+            self.goto: !@go ;
         } else {
             if $c ~~ / ^\d / {
                 self.p: $c ;

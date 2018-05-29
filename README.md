@@ -4,6 +4,13 @@ NAME
 
 Terminal::asciisketch
 
+INSTALL
+=======
+
+    zef install Terminal::asciisketch
+
+    zef install https://github.com/ktown007/perl6-terminal-asciisketch.git
+
 SYNOPSIS
 ========
 
@@ -18,13 +25,14 @@ SYNOPSIS
 DESCRIPTION
 ===========
 
+    $a.h ; $a.j ; $a.k ; $a.l ;
 directions are vi key bindings ;)
 pen colour 0-9 are ascii grey scale
 pen colour 32-126 are ascii characters
 pen colour 10-12 are a few emojis
 
     $a.p: 10
-set pen colour
+set pen colour, note this accidentally created a new customizable code table. On the plus side it allows you to extend acsii with arbitrary unicode 🙂.
 
     $a.pc: 15, "F"
 set a character for a pen colour
